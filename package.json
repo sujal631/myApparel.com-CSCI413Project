@@ -1,0 +1,26 @@
+{
+  "name": "myapparel.com-csci413project",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "myApparel.com-ecommerce-website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujal631/myApparel.com-CSCI413Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sujal631/myApparel.com-CSCI413Project/issues"
+  },
+  "homepage": "https://github.com/sujal631/myApparel.com-CSCI413Project#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
