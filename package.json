@@ -5,7 +5,10 @@
   "description": "myApparel.com-ecommerce-website",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "install-dependencies": "npm install && npm install --prefix frontend",
+    "backend": "npm start",
+    "frontend": "npm start --prefix frontend"
   },
   "repository": {
     "type": "git",
