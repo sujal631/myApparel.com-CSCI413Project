@@ -1,39 +1,27 @@
-# myApparel.com-CSCI413Project
- myApparel.com-ecommerce-website
+# myApparel ecommerce-website.
+This application uses NodeJS, Express (backend), React (frontend)
 
-1. Website Template
- Create myApparel.com folder
- create template folder
- create index.html
- add default HTML code
- link to style.css
- create header, main and footer
- style elements
- 
-2. Display Products
- create products div
- add product attributes
- add link, image, name and price
- 
-3. Create React App
- npx create-react-app frontend
- npm start
- Remove unused files
- copy index.html content to App.js
- copy style.css content to index.css
+## Dependencies
 
-4.Create Rating and Product Component
- create components/Rating.js
- create div.rating
- style div.rating, span and last span
- Create Product component
- Use Rating component
- 
- 5.Build Product Screen
- Install react-router-dom
- Use BrowserRouter and Route for Home Screen
- Create HomeScreen.js
- Add product list code there
- Create ProductScreen.js
- Add new Route from product details to App.js
- Create 3 columns for product image, info and action
+- NodeJS
+- NPM
+- MongoDB (Local DB instance)
+
+## Setup & Installation
+1. First clone the repository
+```sh
+git clone <repository_url>
+```
+2. Install dependencies
+```sh
+cd  myApparel.com-CSCI413Project
+npm run install-dependencies
+```
+3. Run backend (this script is defined in root package.json)
+```sh
+npm run backend
+```
+4. Run frontend (this script is defined in root package.json)
+```sh
+npm run frontend
+```
