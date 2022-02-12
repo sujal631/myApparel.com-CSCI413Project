@@ -1,7 +1,8 @@
+
 const data = {
   products: [
     {
-      _id: '001',
+    
       name: 'Nike Air Force 1 07',
       category: 'Shoes',
       image: '/images/p1.jpg',
@@ -14,7 +15,6 @@ const data = {
         'The radiance lives on in the Nike Air Force 1 07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.',
     },
     {
-      _id: '002',
       name: 'Nike Jordan Delta 2',
       category: 'Shoes',
       image: '/images/p2.png',
@@ -27,7 +27,6 @@ const data = {
         'The Jordan Delta 2 offers a fresh, fearless take on the features you want: durability, comfort and an attitude that is Jordan to the core. We updated design lines and swapped out some components, but the idea is the same as the first Delta. The 2 still has that clashing combination of supportive and space age-like materials, with lots of different textures and heavy stitching to create a look that is both adventurous and iconic.',
     },
     {
-      _id: '003',
       name: 'Nike Jordan 1 Centre Court',
       category: 'Shoes',
       image: '/images/p3.png',
@@ -40,7 +39,6 @@ const data = {
         'The Air Jordan 1 Centre Court puts a sophisticated spin on 1 of sneaker historys most iconic designs. It is made with full-grain leather and suede in the upper, plus a double layer of cushioning under the heel. An exploded Wings logo stitched down along the back of the shoe adds distinction.',
     },
     {
-      _id: '004',
       name: 'Nike Jordan Point Lane',
       category: 'Shoes',
       image: '/images/p4.png',
@@ -53,7 +51,6 @@ const data = {
         'The Jordan Point Lane mixes elements from game shoes MJ wore during 3 of his most memorable seasons. Named for his Chicago address, this mash-up pulls in bits and pieces from the AJ3, AJ6 and AJ11 to create a shoe that is inspired by greatness and uncompromising in its comfort.',
     },
     {
-      _id: '005',
       name: 'Nike Air Jordan 1 Hi FlyEase',
       category: 'Shoes',
       image: '/images/p5.png',
@@ -66,7 +63,6 @@ const data = {
         'The Air Jordan 1 Hi FlyEase combines the coveted style of Michael Jordans first signature sneaker with a quick and easy 1-handed entry system. There are no laces to tie, just a wraparound zipper and 2 straps to secure a custom fit.',
     },
     {
-      _id: '006',
       name: 'Nike Jordan Why Not? Zer0.5',
       category: 'Shoes',
       image: '/images/p6.png',
@@ -79,7 +75,6 @@ const data = {
         'Russell Westbrook is fast. In 48 minutes of play, he is only in the air a few seconds at most, with the bulk of his time spent leaving opponents in the dust. These Jordans optimize Russ superpower of speed with updated cushioning, data-informed traction, and a full-foot fit system that will keep you contained and in control. They combine the rugged look of a trail-running shoe with the bold mashup of colors that Why Not? is known for.',
     },
     {
-      _id: '007',
       name: 'Nike Jordan MA2',
       category: 'Shoes',
       image: '/images/p7.png',
@@ -92,7 +87,6 @@ const data = {
         'Shatter the sneaker status quo in the Jordan MA2. Made with a mix of suede, full-grain leather and a variety of textiles, it has got unconventional labels, technical micro-graphics and raw foam edges for a balance of new and classic. Easy to get on and off, it wears with just about anything.',
     },
     {
-      _id: '008',
       name: 'Nike Sportswear Storm-FIT ADV',
       category: 'Jacket',
       image: '/images/p8.jpg',
@@ -105,7 +99,6 @@ const data = {
         'Designed with downpours and windstorms in mind, the Nike Sportswear Storm-FIT ADV Hooded Jacket is a waterproof shell inspired by the iconic M65 Jacket. The Storm-FIT ADV fabric features taped seams to help keep you warm and dry. Quick-adjust details, secure storage and an articulated design make this easy-to-layer zip-up a lock in stormy weather. This product is made with 100% recycled polyester and recycled nylon fibers.',
     },
     {
-      _id: '009',
       name: 'Nike Sportswear Therma-FIT Legacy',
       category: 'Jacket',
       image: '/images/p9.jpg',
@@ -118,7 +111,6 @@ const data = {
         'The Nike Sportswear Therma-FIT Legacy Series Anorak is a stylish pullover that is designed for versatility. Its water-repellent shell fabric features a combination of Thermore insulation and fleece lining to keep you warm and dry in cold, wet weather. Ripstop panels reinforce high-wear areas to provide long-lasting durability and style. This product is made with at least 75% recycled polyester fibers.',
     },
     {
-      _id: '010',
       name: 'Jordan Flight Heritage',
       category: 'Pants',
       image: '/images/p10.jpg',
@@ -131,7 +123,6 @@ const data = {
         'Shift into casual mode with the Jordan Flight Heritage Cargo Pants. They are made from soft, lightweight woven fabric with neutral colors and camo prints to choose from. Cargo pockets and adjustable cuffs provide functionality.',
     },
     {
-      _id: '011',
       name: 'Jordan AJ5',
       category: 'Shirt',
       image: '/images/p11.jpg',
@@ -144,7 +135,6 @@ const data = {
         'The Jumpman is at the center of the Jordan AJ5 T-Shirt. It is made from soft, lightweight cotton with fresh graphics that hook to the brands heritage.',
     },
     {
-      _id: '012',
       name: 'Nike Standard Issue',
       category: 'Hoodie',
       image: '/images/p12.png',
@@ -157,7 +147,6 @@ const data = {
         'The Nike Standard Issue Pullover Hoodie is made to play in and wear all day. The soft fabric with embroidered paint splatter gives it the look and feel of a lifestyle hoodie. Sweat-wicking Dri-FIT technology and flexible panels make it wearable on the court.',
     },
     {
-      _id: '013',
       name: 'Nike Sportswear Tech Fleece',
       category: 'Hoodie',
       image: '/images/p13.png',
@@ -170,7 +159,6 @@ const data = {
         'A whole new way to Tech Fleece, the Nike Sportswear Tech Fleece Hoodie is now offered in a fabric made from recycled and organic materials. A full-zip, easy-fitting design helps you move and layer comfortably. This product is made with 100% sustainable materials, using a blend of recycled polyester, recycled cotton and organic cotton fibers. The blend is at least 10% recycled fibers or at least 10% organic cotton fibers.',
     },
     {
-      _id: '014',
       name: 'Jordan Max Aura 3',
       category: 'Shoes',
       image: '/images/p14.png',
@@ -183,7 +171,6 @@ const data = {
         'Get your piece of Jordan history and heritage in the Jordan Max Aura 3. Inspired by the brands rich legacy of performance basketball, it has the energy of a game shoe and a design that puts a fresh spin on classic details.',
     },
     {
-      _id: '015',
       name: 'Project Rock BSR 2 Training Shoes',
       category: 'Shoes',
       image: '/images/p15.jpg',
