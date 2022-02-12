@@ -1,3 +1,7 @@
+/* Discription: List of Sample Products
+Author: Sujal Joshi
+Date: 2-8-22*/
+
 const data = {
   products: [
     {

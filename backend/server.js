@@ -1,3 +1,7 @@
+/* Discription: Created basic express server for our e-commerce website
+Author: Sujal Joshi
+Date: 2-8-22*/
+
 import express from 'express';
 import data from './data.js';
 
