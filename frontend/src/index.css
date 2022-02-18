@@ -100,6 +100,14 @@ a.brand {
   font-size: 8rem;
   font-weight: bold;
 }
+.badge {
+  background-color: #e91818;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.7rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
