@@ -134,8 +134,8 @@ a.brand {
   padding-right: 0rem;
   flex: 1 1 30rem;
 }
-.min-30 {
-  min-width: 30rem;
+.min-40 {
+  min-width: 40rem;
 }
 /* Image */
 img {
