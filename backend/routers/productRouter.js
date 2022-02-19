@@ -10,7 +10,7 @@ import Product from '../models/productModel';
 
 const productRouter = express.Router();
 
-userRouter.get('/seed', async (req, res) => {
+productRouter.get('/seed', async (req, res) => {
   const createdProducts = await Product.insertMany(data.products);
   res.send({ createdProducts });
 });
