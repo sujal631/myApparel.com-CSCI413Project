@@ -2,7 +2,7 @@
 Author: Sujal Joshi
 Date: 2-11-22*/
 
-import Axios from 'axios';
+import Axios from "../axios";
 import {
   PRODUCT_DETAILS_FAIL,
   PRODUCT_DETAILS_REQUEST,

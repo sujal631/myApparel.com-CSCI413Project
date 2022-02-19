@@ -4,10 +4,16 @@ Date: 2-8-22*/
 
 import express from 'express';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 import productRouter from './routers/productRouter.js';
+import userRouter from './routers/userRouter.js';
+
+dotenv.config();
 
 const app = express();
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/myApparel', {
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+mongoose.connect(process.env.MONGODB_URL||'mongodb://localhost/myApparel', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -27,12 +33,16 @@ app.get('/api/products', (req, res) => {
 });*/
 
 app.use('/api/products', productRouter);
+app.use('/api/users', userRouter);
 
+app.use((err, req, res, next) => {
+  res.status(500).send({message: err.message});
+});
 
 app.get('/', (req, res) => {
   res.send('Server is ready');
 });
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Serve at http://localhost:${port}`);
 });
