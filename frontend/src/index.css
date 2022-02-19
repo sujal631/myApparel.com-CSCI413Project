@@ -62,6 +62,9 @@ ul {
 li {
   margin-top: 1rem;
 }
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -70,9 +73,14 @@ button {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
@@ -91,6 +99,15 @@ a.brand {
   color: #ffffff;
   font-size: 8rem;
   font-weight: bold;
+}
+.badge {
+  background-color: #e91818;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.7rem 0.7rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 0.2rem;
 }
 .row {
   display: flex;
@@ -117,9 +134,16 @@ a.brand {
   padding-right: 0rem;
   flex: 1 1 30rem;
 }
+.min-40 {
+  min-width: 40rem;
+}
 /* Image */
 img {
   border-radius: 0.5rem;
+}
+img.small {
+  max-width: 6rem;
+  width: 100%;
 }
 img.medium {
   max-width: 31rem;
@@ -158,6 +182,19 @@ img.large {
 .success {
   color: #20a020;
 }
-.error {
+.danger {
   color: #a02020;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+.alert-info {
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alert-danger {
+  color: #a02020;
+  background-color: #ffe0e0;
 }
