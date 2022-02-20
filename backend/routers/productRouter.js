@@ -1,16 +1,35 @@
 /* Discription: Seed api to create a router for the products,
-     makes the server modular so we can have multiple files
+     makes the server modular so we are can have multiple files
      that have differnet routers
-Author: Praneetha Gobburi
 Date: 2-9-22*/
 
 import express from 'express';
+import expressAsyncHandler from 'express-async-handler';
 import data from '../data.js';
-import Product from '../models/productModel';
+import Product from '../models/productModel.js';
 
 const productRouter = express.Router();
 
-productRouter.get('/seed', async (req, res) => {
-  const createdProducts = await Product.insertMany(data.products);
-  res.send({ createdProducts });
-});
+productRouter.get('/', expressAsyncHandler(async(req, res) =>{
+     const products = await Product.find({});
+     res.send(products);
+}));
+
+productRouter.get('/seed', expressAsyncHandler(async(req, res) =>{
+   // await Product.remove({});
+    const createdProducts = await Product.insertMany(data.products);
+    res.send({createdProducts});
+})
+);
+
+productRouter.get('/:id', expressAsyncHandler(async (req, res) =>{
+     const product = await Product.findById(req.params.id);
+     if(product){
+          res.send(product);
+     }
+     else{
+          res.status(404).send({message: 'Product Not Found'})
+     }
+}));
+
+export default productRouter;
