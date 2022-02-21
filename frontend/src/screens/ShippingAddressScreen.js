@@ -19,13 +19,13 @@ export default function ShippingAddressScreen(props) {
   const [address, setAddress] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
   const [region, setRegion] = useState(shippingAddress.region);
-  const [zipCode, setzipCode] = useState(shippingAddress.postalCode);
+  const [zipCode, setzipCode] = useState(shippingAddress.zipCode);
   const [country, setCountry] = useState(shippingAddress.country);
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(
-      saveShippingAddress({ fullName, address, city, zipCode, country })
+      saveShippingAddress({ fullName, address, city, region, zipCode, country })
     );
     props.history.push('/payment');
   };
