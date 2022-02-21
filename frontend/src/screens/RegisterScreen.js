@@ -49,7 +49,7 @@ export default function RegisterScreen(props) {
           <input
             type="text"
             id="name"
-            placeholder="Enter your Full Name"
+            placeholder="Enter full name"
             required
             onChange={(e) => setName(e.target.value)}
           ></input>
@@ -59,7 +59,7 @@ export default function RegisterScreen(props) {
           <input
             type="email"
             id="email"
-            placeholder="Enter your email"
+            placeholder="Enter email"
             required
             onChange={(e) => setEmail(e.target.value)}
           ></input>
@@ -69,7 +69,7 @@ export default function RegisterScreen(props) {
           <input
             type="password"
             id="password"
-            placeholder="Enter your password"
+            placeholder="Enter password"
             required
             onChange={(e) => setPassword(e.target.value)}
           ></input>
@@ -79,7 +79,7 @@ export default function RegisterScreen(props) {
           <input
             type="password"
             id="confirmPassword"
-            placeholder="Please confirm your password"
+            placeholder="Please confirm password"
             required
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></input>
