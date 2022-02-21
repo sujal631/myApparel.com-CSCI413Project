@@ -12,10 +12,11 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
-mongoose.connect(process.env.MONGODB_URL||'mongodb://localhost/myApparel', {
+app.use(express.urlencoded({ extended: true }));
+
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/myApparel', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
 });
 
 /* THIS RETURNS STATIC DATA I HAVE CONNECTED MY DB TO BACKEND SO NO LONGER REQ
@@ -36,7 +37,7 @@ app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 
 app.use((err, req, res, next) => {
-  res.status(500).send({message: err.message});
+  res.status(500).send({ message: err.message });
 });
 
 app.get('/', (req, res) => {

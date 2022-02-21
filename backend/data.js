@@ -3,21 +3,26 @@ import bcrpt from 'bcryptjs';
 const data = {
   users: [
     {
-    name: 'Praneetha',
-    email: 'adminemail@gmail.com',
-    password: bcrpt.hashSync('1234', 8),
-    isAdmin:true,
-  },
-  {
-    name: 'Jane',
-    email: 'useremail@gmail.com',
-    password: bcrpt.hashSync('1234', 8),
-    isAdmin:false,
-  },
+      name: 'Praneetha',
+      email: 'adminemail@gmail.com',
+      password: bcrpt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Sujal',
+      email: 'sujal631@gmail.com',
+      password: bcrpt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Jane',
+      email: 'useremail@gmail.com',
+      password: bcrpt.hashSync('1234', 8),
+      isAdmin: false,
+    },
   ],
   products: [
     {
-    
       name: 'Nike Air Force 1 07',
       category: 'Shoes',
       image: '/images/p1.jpg',
