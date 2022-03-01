@@ -90,6 +90,9 @@ button.primary {
 button.block {
   width: 100%;
 }
+button.small {
+  font-size: 1.2rem;
+}
 /* Header */
 header a {
   color: #ffffff;
@@ -227,7 +230,7 @@ img.large {
   position: absolute;
   display: none;
   right: 0;
-  min-width: 9rem;
+  min-width: 12rem;
   padding: 1rem;
   z-index: 1;
   background-color: #464747;
@@ -249,4 +252,21 @@ img.large {
 .checkout-steps > div.active {
   border-top-color: #6b64ce;
   color: #6b64ce;
+}
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
 }
