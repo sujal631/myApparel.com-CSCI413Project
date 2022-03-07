@@ -2,7 +2,7 @@
 Author: Sujal Joshi
 Date: 2-11-22*/
 
-import Axios from "axios";
+import Axios from 'axios';
 import {
   PRODUCT_CATEGORY_LIST_FAIL,
   PRODUCT_CATEGORY_LIST_REQUEST,
@@ -15,18 +15,22 @@ import {
   PRODUCT_LIST_SUCCESS,
 } from '../constants/productConstants';
 
-export const listProducts = ({name = '', category = '',}) => async (dispatch) => {
-  dispatch({
-    type: PRODUCT_LIST_REQUEST,
-  });
-  try {
-    const { data } = await Axios.get(
-      `/api/products?name=${name}&category=${category}`);
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
-  } catch (error) {
-    dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
-  }
-};
+export const listProducts =
+  ({ name = '', category = '' }) =>
+  async (dispatch) => {
+    dispatch({
+      type: PRODUCT_LIST_REQUEST,
+    });
+    try {
+      const { data } = await Axios.get(
+        // '/api/products'
+        `/api/products?name=${name}&category=${category}`
+      );
+      dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    } catch (error) {
+      dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+  };
 
 export const listProductCategories = () => async (dispatch) => {
   dispatch({
