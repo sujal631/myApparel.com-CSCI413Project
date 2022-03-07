@@ -11,8 +11,20 @@ import Product from '../models/productModel.js';
 const productRouter = express.Router();
 
 productRouter.get('/', expressAsyncHandler(async(req, res) =>{
-     const products = await Product.find({});
+     const name = req.query.name || '';
+     const category = req.query.category || '';
+     const nameFilter = name ? {name: {$regex: name, $options:'i'}} : {};
+     const categoryFilter = category ? {category} : {};
+     const products = await Product.find({
+          ...nameFilter,
+          ...categoryFilter,
+     }).populate('');
      res.send(products);
+}));
+
+productRouter.get('/categories', expressAsyncHandler(async(req, res) =>{
+     const categories = await Product.find().distinct('category');
+     res.send(categories);
 }));
 
 productRouter.get('/seed', expressAsyncHandler(async(req, res) =>{

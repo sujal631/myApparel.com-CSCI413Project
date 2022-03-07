@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { signout } from './actions/userActions';
@@ -17,6 +17,7 @@ import OrderScreen from './screens/OrderScreen';
 
 import SearchBox from './components/SearchBox';
 import SearchScreen from './screens/SearchScreen';
+import { listProductCategories } from './actions/productActions';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -28,6 +29,9 @@ function App() {
   const signoutHandler = () => {
     dispatch(signout());
   };
+  useEffect(() => {
+    dispatch(listProductCategories());
+  }, [dispatch]);
   return (
     <BrowserRouter>
       <div className="grid-container">
@@ -108,6 +112,16 @@ function App() {
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
           <Route
             path="/search/name/:name?"
+            component={SearchScreen}
+            exact
+          ></Route>
+           <Route
+            path="/search/category/:category"
+            component={SearchScreen}
+            exact
+          ></Route>
+          <Route
+            path="/search/category/:category/name/:name"
             component={SearchScreen}
             exact
           ></Route>
