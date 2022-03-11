@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+/* import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { listProducts } from '../actions/productActions';
@@ -12,18 +12,25 @@ export default function SearchScreen(props) {
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
-
   const productCategoryList = useSelector((state) => state.productCategoryList);
-  const { loading:loadingCategories, errorCategories, categories } = productCategoryList;
+  const {
+    loading: loadingCategories,
+    errorCategories,
+    categories,
+  } = productCategoryList;
   useEffect(() => {
-    dispatch(listProducts({ name: name !== 'all' ? name : '',
-    category: category !== 'all' ? category : '' , }));
+    dispatch(
+      listProducts({
+        name: name !== 'all' ? name : '',
+        category: category !== 'all' ? category : '',
+      })
+    );
   }, [category, dispatch, name]);
 
   const getFilterUrl = (filter) => {
     const filterCategory = filter.category || category;
     const filterName = filter.name || name;
-    return  `/search/category/${filterCategory}/name/${filterName}`;
+    return `/search/category/${filterCategory}/name/${filterName}`;
   };
 
   return (
@@ -41,22 +48,23 @@ export default function SearchScreen(props) {
         <div className="col-1">
           <h3>Department</h3>
           {loadingCategories ? (
-          <LoadingBox></LoadingBox>
-        ) : errorCategories ? (
-          <MessageBox variant="danger">{error}</MessageBox>
-        ) : (
-          <ul>
-            {categories.map(c => {
-              <li key={c}>
-                <Link className= {c === category? 'active' : ''} 
-                to={getFilterUrl({category: c})}>
-                  {c}
-                </Link>
-              </li>
-            })}
-          </ul>
-        )}
-          
+            <LoadingBox></LoadingBox>
+          ) : errorCategories ? (
+            <MessageBox variant="danger">{error}</MessageBox>
+          ) : (
+            <ul>
+              {categories.map((c) => {
+                <li key={c}>
+                  <Link
+                    className={c === category ? 'active' : ''}
+                    to={getFilterUrl({ category: c })}
+                  >
+                    {c}
+                  </Link>
+                </li>;
+              })}
+            </ul>
+          )}
         </div>
         <div className="col-3">
           {loading ? (
@@ -80,3 +88,4 @@ export default function SearchScreen(props) {
     </div>
   );
 }
+ */
