@@ -296,3 +296,8 @@ img.large {
   font-weight: bolder;
   font-style: oblique;
 }
+
+/* Carousel */
+.carousel .slide img {
+  max-width: 30rem;
+}
