@@ -42,3 +42,7 @@ npm run frontend
 Becuase I am using a Sandbox paypal account, so real paypal account
 cannot be used to pay for the product. That is why, above mentioned
 test account's email and pw is used.
+
+> > MONGODB CONNECTION
+
+> Address: mongodb+srv://myApparel:bitlegion@main.cc0jb.mongodb.net/myApparel?authSource=admin&replicaSet=atlas-10kdvp-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true

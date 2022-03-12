@@ -7,18 +7,21 @@ const data = {
       email: 'adminemail@gmail.com',
       password: bcrpt.hashSync('1234', 8),
       isAdmin: true,
+      isSeller: true,
+      seller: {
+        name: 'Puma',
+        logo: '/images/logo.webp',
+        description: 'best seller',
+        rating: 4.5,
+        numReviews: 120,
+      },
     },
     {
       name: 'Sujal',
       email: 'sujal631@gmail.com',
       password: bcrpt.hashSync('1234', 8),
       isAdmin: true,
-    },
-    {
-      name: 'Jane',
-      email: 'useremail@gmail.com',
-      password: bcrpt.hashSync('1234', 8),
-      isAdmin: false,
+      isSeller: false,
     },
   ],
   products: [
