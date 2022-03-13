@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ff8000;
+  color: #ff1100;
 }
 ul {
   padding: 0;
@@ -100,8 +100,8 @@ header a {
 }
 a.brand {
   color: #ffffff;
-  font-size: 5rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 .badge {
   background-color: #e91818;
@@ -143,6 +143,16 @@ a.brand {
 .col-4 {
   flex: 32 1 75rem;
 }
+.col-5 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: 1 1 5rem;
+}
+.col-6 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  flex: 1 1 100rem;
+}
 .min-40 {
   min-width: 40rem;
 }
@@ -155,7 +165,7 @@ img.small {
   width: 100%;
 }
 img.medium {
-  max-width: 31rem;
+  max-width: 25rem;
   width: 100%;
 }
 img.large {
@@ -300,4 +310,44 @@ img.large {
 /* Carousel */
 .carousel .slide img {
   max-width: 30rem;
+}
+
+/* Aside */
+aside {
+  position: fixed;
+  width: 20rem;
+  height: 100%;
+  background-color: #efefef;
+  z-index: 1000;
+  transform: translateX(-20rem);
+  transition: all 0.5s;
+}
+aside.open {
+  transform: translateX(0);
+}
+button.open-sidebar {
+  font-size: 3rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.5rem;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+button.open-sidebar:hover {
+  border-color: #ffffff;
+}
+aside ul {
+  padding: 0;
+  list-style: none;
+}
+aside li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+button.close-sidebar {
+  padding: 0.3rem 0.8rem;
+}
+.active {
+  font-weight: bold;
 }
