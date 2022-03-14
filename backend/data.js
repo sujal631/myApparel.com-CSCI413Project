@@ -1,4 +1,7 @@
 import bcrpt from 'bcryptjs';
+import * as mongoose from 'mongoose';
+
+const sellerObjectId = "622e7df0f0cf813e4fe3965e";
 
 const data = {
   users: [
