@@ -86,7 +86,7 @@ export const createProduct = () => async (dispatch, getState) => {
       '/api/products',
       {},
       {
-        header: { Authorization: `Bearer ${userInfo.token}` },
+        headers: { Authorization: `Bearer ${userInfo.token}` },
       }
     );
     dispatch({
