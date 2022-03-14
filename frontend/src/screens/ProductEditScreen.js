@@ -86,7 +86,7 @@ export default function ProductEditScreen(props) {
       setLoadingUpload(false);
     }
   };
-
+  
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
@@ -98,7 +98,7 @@ export default function ProductEditScreen(props) {
         {loading ? (
           <LoadingBox></LoadingBox>
         ) : error ? (
-          <MessageBox variant="danger"> {error} </MessageBox>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <>
             <div>
@@ -106,102 +106,88 @@ export default function ProductEditScreen(props) {
               <input
                 id="name"
                 type="text"
-                placeholder="Enter Name"
+                placeholder="Enter name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-              >
-                {' '}
-              </input>
+              ></input>
             </div>
             <div>
               <label htmlFor="price">Price</label>
               <input
                 id="price"
                 type="text"
-                placeholder="Enter Price"
+                placeholder="Enter price"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
-              >
-                {' '}
-              </input>
+              ></input>
             </div>
             <div>
               <label htmlFor="image">Image</label>
               <input
                 id="image"
                 type="text"
-                placeholder="Enter Image"
+                placeholder="Enter image"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
-              >
-                {' '}
-              </input>
-              <div>
-                <label htmlFor="imageFile">Image File</label>
-                <input
-                  type="file"
-                  id="imageFile"
-                  label="Choose Image"
-                  onChange={uploadFileHandler}
-                ></input>
-                {loadingUpload && <LoadingBox></LoadingBox>}
-                {errorUpload && (
-                  <MessageBox variant="danger">{errorUpload}</MessageBox>
-                )}
-              </div>
+              ></input>
+            </div>
+            <div>
+              <label htmlFor="imageFile">Image File</label>
+              <input
+                type="file"
+                id="imageFile"
+                label="Choose Image"
+                onChange={uploadFileHandler}
+              ></input>
+              {loadingUpload && <LoadingBox></LoadingBox>}
+              {errorUpload && (
+                <MessageBox variant="danger">{errorUpload}</MessageBox>
+              )}
             </div>
             <div>
               <label htmlFor="category">Category</label>
               <input
                 id="category"
                 type="text"
-                placeholder="Enter Category"
+                placeholder="Enter category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-              >
-                {' '}
-              </input>
+              ></input>
             </div>
             <div>
               <label htmlFor="brand">Brand</label>
               <input
                 id="brand"
                 type="text"
-                placeholder="Enter Brand"
+                placeholder="Enter brand"
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
-              >
-                {' '}
-              </input>
+              ></input>
             </div>
             <div>
               <label htmlFor="countInStock">Count In Stock</label>
               <input
                 id="countInStock"
                 type="text"
-                placeholder="Enter Count In Stock"
+                placeholder="Enter countInStock"
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
-              >
-                {' '}
-              </input>
+              ></input>
             </div>
             <div>
               <label htmlFor="description">Description</label>
               <textarea
                 id="description"
-                rows="5"
+                rows="3"
                 type="text"
-                placeholder="Enter Description"
+                placeholder="Enter description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-              >
-                {' '}
-              </textarea>
+              ></textarea>
             </div>
             <div>
               <label></label>
-              <button classaName="primary" type="submit">
+              <button className="primary" type="submit">
                 Update
               </button>
             </div>
@@ -210,4 +196,5 @@ export default function ProductEditScreen(props) {
       </form>
     </div>
   );
+  
 }
