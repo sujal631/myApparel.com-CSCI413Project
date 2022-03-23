@@ -236,7 +236,40 @@ function App() {
           ></SellerRoute>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All rights reserved</footer>
+        <footer>
+          <div className=" footer-content">
+            <h3>myApparel.com</h3>
+            <p>FASHION AS UNIQUE AS YOU ARE</p>
+            <ul className="socials">
+              <li>
+                <a href="https://www.facebook.com/">
+                  <i className="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/">
+                  <i className="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/">
+                  <i className="fa fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-bottom ">
+            <p>
+              Copyright &copy; 2022 myApparel.com || Designed by{' '}
+              <span> BitLegion</span> ||
+            </p>
+          </div>
+        </footer>
       </div>
     </BrowserRouter>
   );
