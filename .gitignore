@@ -20,6 +20,3 @@ lerna-debug.log*
 
 .env
 
-/uploads/*.jpg
-/uploads/*.jpeg
-/uploads/*.png

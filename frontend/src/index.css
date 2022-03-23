@@ -22,7 +22,7 @@ body {
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 12rem 1fr 20rem;
+  grid-template-rows: 16rem 1fr 20rem;
   height: 100%;
 }
 header {
@@ -37,7 +37,6 @@ footer {
   grid-area: footer;
   background-color: #757575;
   height: auto;
-  width: 100vw;
   color: #ffffff;
   padding-top: 8px;
 }
@@ -83,7 +82,6 @@ footer {
 }
 .footer-bottom {
   background: #757575;
-  width: 100vw;
   padding: 2px 0;
   text-align: center;
 }
@@ -161,7 +159,7 @@ header a {
 }
 a.brand {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: bolder;
 }
 .badge {
