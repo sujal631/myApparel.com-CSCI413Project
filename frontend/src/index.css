@@ -32,6 +32,7 @@ header {
 main {
   grid-area: main;
   padding: 1rem;
+  background-color: white;
 }
 footer {
   grid-area: footer;
